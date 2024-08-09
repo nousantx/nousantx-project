@@ -10,9 +10,10 @@ const cssVariableProps = {
 };
 
 const regProps = {
+  all: "all",
   txf: "color",
   trans: "transform",
-  shadow:"boxShadow",
+  shadow: "boxShadow",
   "br-tl": "borderTopLeftRadius",
   "br-bl": "borderBottomLeftRadius",
   "br-top": ["borderTopLeftRadius", "borderTopRightRadius"]
@@ -37,4 +38,9 @@ const customValueProps = {
   }
 };
 
-export const property = [propsLib.default, { ...cssVariableProps, ...regProps, ...customValueProps }];
+export const property = {
+  ...propsLib.default,
+  ...cssVariableProps,
+  ...regProps,
+  ...customValueProps
+};

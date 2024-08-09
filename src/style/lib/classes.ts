@@ -33,22 +33,47 @@ export const classUtils = {
   color: useColor(colors, "text"),
   backgroundColor: useColor(colors, "bg"),
   borderColor: useColor(colors, "bdr"),
+  textDecorationColor: useColor(colors, "decoration"),
   "--shadow-color": useRgbColor(colors, "shadow"),
   display: {
     flex: "flex",
+    "i-flex": "inline-flex",
     block: "block",
+    "i-block": "inline-block",
     none: "none"
   },
   position: {
     relative: "relative",
     absolute: "absolute",
+    sticky: "sticky",
     fixed: "fixed"
   },
   justifyContent: {
-    "space-between": "space-between"
+    "space-between": "space-between",
+    end: "flex-end",
+    start: "flex-start"
   },
   flexWrap: {
-    "flex-wrap": "wrap"
+    "flex-wrap": "wrap",
+    "flex-nowrap": "nowrap"
+  },
+  isolation: { isolate: "isolate" },
+  fontFamily: {
+    "font-default": "gabarito, sans-serif",
+    "font-geo": "geologica, sans-serif",
+    "font-poppins": "poppins, sans-serif",
+    "font-code": "'JetBrains Mono', monoscape"
+  },
+  fontWeight: {
+    "font-thin": "100",
+    "font-extralight": "200",
+    "font-light": "300",
+    "font-normal": "400",
+    "font-medium": "500",
+    "font-semibold": "600",
+    "font-bold": "700",
+    "font-extrabold": "800",
+    "font-black": "900"
   },
   boxShadow: {
     "shadow-sm": "0 1px 2px 0 rgb(var(--shadow-color, 0 0 0) / var(--shadow-opa, 0.05))",
