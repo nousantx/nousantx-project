@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /page/id/
+Sitemap: https://nousantxproject.web.app/sitemap.xml
