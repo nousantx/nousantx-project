@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { Routes } from "@generouted/react-router";
 import "nosant-icon";
+import "remixicon/fonts/remixicon.css";
 
 import "@style/css/index.css";
 import "@style/css/color.css";

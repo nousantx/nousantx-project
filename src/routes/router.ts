@@ -5,7 +5,10 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 
 export type Path =
   | `/`
+  | `/page/greenowl`
   | `/page/id/dzikir`
+  | `/page/limerick`
+  | `/page/meadow`
   | `/page/vulturex`
 
 export type Params = {
