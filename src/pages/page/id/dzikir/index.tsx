@@ -4,6 +4,7 @@ import property from "@tenoxui/property";
 import { colors } from "./_components/color";
 import { dzikir } from "./_components/dzikir";
 import "./_components/index.css";
+import { Helmet } from "react-helmet";
 
 function Dzikir() {
   useLayoutEffect(() => {
@@ -32,6 +33,10 @@ function Dzikir() {
 
   return (
     <>
+      <Helmet>
+        <title>Bacaan Dzikir Setelah Sholat | By NOuSantx</title>
+        <meta name="description" content="Kumpulan dzikir dan do'a menurut sunnah setelah sholat fardhu." />
+      </Helmet>
       <main className="w-100% w-mx-1440px mx-auto">
         <article className="p-2rem position-relative">
           <header>
@@ -110,7 +115,7 @@ function Dzikir() {
           . Built with{" "}
           <a className="text-primary-400" href="https://github.com/tenoxui/css">
             TenoxUI
-          </a>
+          </a>.
         </p>
       </footer>
     </>

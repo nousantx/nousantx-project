@@ -1,7 +1,13 @@
 import { styler } from "@styler";
 import React from "react";
 const VultureX = () => {
-  styler();
+  styler({
+    values: {
+      family: {
+        code: "JetBrains Mono"
+      }
+    }
+  });
 
   const HeaderLink: React.FC<{
     children?: React.ReactNode;
